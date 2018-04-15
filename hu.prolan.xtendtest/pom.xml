@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>hu.prolan</groupId>
 	<artifactId>hu.prolan.xtendtest</artifactId>
-	<version>1.2.3</version>
+	<version>1.6.0-SNAPSHOT</version>
 	<build>
 		<sourceDirectory>src</sourceDirectory>
 	<plugins>
