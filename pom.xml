@@ -8,7 +8,7 @@
 
 	<groupId>hu.prolan</groupId>
 	<artifactId>hu.prolan.parent</artifactId>
-	<version>1.2.5-SNAPSHOT</version>
+	<version>1.2.6-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 
@@ -16,7 +16,9 @@
 		<manifest-location>META-INF</manifest-location>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
-	</properties>
+	
+    <maven.build.timestamp.format>yyyyMMdd-HHmm</maven.build.timestamp.format>
+  </properties>
 
 	<scm>
 	<developerConnection>scm:git:https://github.com/fneska/maven_release_test.git</developerConnection>
@@ -45,7 +47,8 @@
 				<artifactId>maven-release-plugin</artifactId>
 				<version>2.5.3</version>
 				<configuration>
-          <tagNameFormat>v@{project.version}</tagNameFormat>
+          <preparationGoals>clean verify</preparationGoals>
+        	<tagNameFormat>${timestamp} - v@{project.version} [${env}]</tagNameFormat>
           <releaseProfiles>release</releaseProfiles>
         </configuration>
 			</plugin>
