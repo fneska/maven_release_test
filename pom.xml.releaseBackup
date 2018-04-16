@@ -16,25 +16,14 @@
 		<manifest-location>META-INF</manifest-location>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
-		<project.scm.id>agi</project.scm.id>
 	
     <maven.build.timestamp.format>yyyyMMdd-HHmm</maven.build.timestamp.format>
   </properties>
-  <repositories>
-    <repository>
-  <id>localDeploy</id>
-    <url>file:///c:/git/maven_release_test</url>
-  </repository>
-</repositories>
+
 	<scm>
 	<developerConnection>scm:git:https://github.com/fneska/maven_release_test.git</developerConnection>
 	
-    
   </scm>
-  
-
-  
-  
 	<dependencies>
 		<dependency>
 			<groupId>org.apache.maven.plugins</groupId>
@@ -56,12 +45,12 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-release-plugin</artifactId>
 				<version>2.5.3</version>
-				
+				<configuration>
           <configuration>
-           <addSchema>true</addSchema>
-          
           <autoVersionSubmodules>true</autoVersionSubmodules>
-          
+          <allowTimestampedSnapshots>true</allowTimestampedSnapshots>
+<!--           <autoVersionSubmodules>true</autoVersionSubmodules> -->
+        </configuration>
         </configuration>
 			</plugin>
 		</plugins>
