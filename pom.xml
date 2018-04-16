@@ -23,7 +23,6 @@
 	<scm>
 	<developerConnection>scm:git:https://github.com/fneska/maven_release_test.git</developerConnection>
 	
-    <tag>${timestamp} - v1.2.6 [${env}]</tag>
   </scm>
 	<dependencies>
 		<dependency>
