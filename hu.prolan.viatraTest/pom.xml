@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>hu.prolan</groupId>
   <artifactId>hu.prolan.viatraTest</artifactId>
-  <version>  1.2.6</version>
+  <version>  1.2.9-SNAPSHOT</version>
   <build>
     <sourceDirectory>src</sourceDirectory>
     <plugins>
