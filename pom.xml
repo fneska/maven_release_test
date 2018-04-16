@@ -48,9 +48,12 @@
 				<version>2.5.3</version>
 				<configuration>
           <configuration>
+          <tagBase>
+            file:///C:/git/maven_release_test/tags
+          </tagBase>
           <autoVersionSubmodules>true</autoVersionSubmodules>
           <allowTimestampedSnapshots>true</allowTimestampedSnapshots>
-<!--           <autoVersionSubmodules>true</autoVersionSubmodules> -->
+          <developmentVersion></developmentVersion> 
         </configuration>
         </configuration>
 			</plugin>
