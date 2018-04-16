@@ -8,7 +8,7 @@
 
 	<groupId>hu.prolan</groupId>
 	<artifactId>hu.prolan.parent</artifactId>
-	<version>1.2.6-SNAPSHOT</version>
+	<version>1.2.6</version>
 	<packaging>pom</packaging>
 
 
@@ -23,7 +23,7 @@
 	<scm>
 	<developerConnection>scm:git:https://github.com/fneska/maven_release_test.git</developerConnection>
 	
-    <tag>v1.2.3</tag>
+    <tag>${timestamp} - v1.2.6 [${env}]</tag>
   </scm>
 	<dependencies>
 		<dependency>
