@@ -8,7 +8,7 @@
 
 	<groupId>hu.prolan</groupId>
 	<artifactId>hu.prolan.parent</artifactId>
-	<version>1.2.10</version>
+	<version>1.2.11-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 
@@ -30,7 +30,7 @@
 	<developerConnection>scm:git:https://github.com/fneska/maven_release_test.git</developerConnection>
 	
     
-    <tag>hu.prolan.parent-1.2.10</tag>
+    <tag>HEAD</tag>
   </scm>
   
 
