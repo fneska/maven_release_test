@@ -51,6 +51,8 @@
           <tagBase>
             file:///C:/git/maven_release_test/tags
           </tagBase>
+          <username>fneska</username>
+          <password>jamiNa73</password>
           <autoVersionSubmodules>true</autoVersionSubmodules>
           <allowTimestampedSnapshots>true</allowTimestampedSnapshots>
           <developmentVersion></developmentVersion> 
