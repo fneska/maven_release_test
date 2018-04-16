@@ -47,9 +47,11 @@
 				<artifactId>maven-release-plugin</artifactId>
 				<version>2.5.3</version>
 				<configuration>
-          <preparationGoals>clean verify</preparationGoals>
-        	<tagNameFormat>${timestamp} - v@{project.version} [${env}]</tagNameFormat>
-          <releaseProfiles>release</releaseProfiles>
+          <configuration>
+          <autoVersionSubmodules>true</autoVersionSubmodules>
+          <allowTimestampedSnapshots>true</allowTimestampedSnapshots>
+<!--           <autoVersionSubmodules>true</autoVersionSubmodules> -->
+        </configuration>
         </configuration>
 			</plugin>
 		</plugins>
