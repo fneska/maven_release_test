@@ -23,6 +23,7 @@
 	<scm>
 	<developerConnection>scm:git:https://github.com/fneska/maven_release_test.git</developerConnection>
 	
+    <tag>hu.prolan.parent-1.2.6</tag>
   </scm>
 	<dependencies>
 		<dependency>
