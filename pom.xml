@@ -62,6 +62,7 @@
 					<!-- Configuration for prepare: -->
 					<preparationGoals>clean verify</preparationGoals>
 				<autoVersionSubmodules>true</autoVersionSubmodules>
+				<updateDependencies>true</updateDependencies>
 <!-- 				<allowTimestampedSnapshots>true</allowTimestampedSnapshots> -->
 					<developmentVersion>1.2.11-${timestamp}</developmentVersion>
 					<releaseVersion>1.2.11-${timestamp}</releaseVersion>
