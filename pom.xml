@@ -8,7 +8,7 @@
 
 	<groupId>hu.prolan</groupId>
 	<artifactId>hu.prolan.parent</artifactId>
-	<version>1.2.8-2019-04-17T09:55:30Z-SNAPSHOT</version>
+	<version>1.2.9-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 
@@ -17,16 +17,16 @@
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 		<timestamp>${maven.build.timestamp}</timestamp>
-		<maven.build.timestamp.format>yyyy-MM-dd'T'HH:mm:ss'Z'</maven.build.timestamp.format>
-		<project.scm.id>github.com</project.scm.id>
+		<maven.build.timestamp.format>yyyy.MM.dd HH:mm:ss</maven.build.timestamp.format>
+<!-- 		<project.scm.id>github.com</project.scm.id> -->
 	</properties>
 
 	<scm>
-		
-		<developerConnection>scm:git:file://localhost/c:\users\fekete.agnes\my_github\maven_release_test1/maven_release_test.git:</developerConnection>
-	<!-- 	<developerConnection>scm:git:https://github.com/fneska/maven_release_test.git</developerConnection> -->
-	  <tag>2018-04-17T09:55:30Z-v1.2.8-2018-04-17T09:55:30Z</tag>
-  </scm>
+
+		<connection>scm:git:https://github.com/fneska/maven_release_test.git</connection>
+		<developerConnection>scm:git:https://github.com/fneska/maven_release_test.git</developerConnection>
+		<tag>2018-04-17T09:55:30Z-v1.2.8-2018-04-17T09:55:30Z</tag>
+	</scm>
 	<dependencies>
 		<dependency>
 			<groupId>org.apache.maven.plugins</groupId>
@@ -49,18 +49,47 @@
 				<artifactId>maven-release-plugin</artifactId>
 				<version>2.5.3</version>
 				<configuration>
-<!-- 					<preparationGoals>clean verify</preparationGoals> -->
-<!-- 					 <tagNameFormat>${timestamp}-v@{project.version}</tagNameFormat> -->
-<preparationGoals>clean verify</preparationGoals>
-<!--        <addSchema>true</addSchema> -->
-<!--        <preparationGoals>true</preparationGoals> -->
-<!--        <autoVersionSubmodules>true</autoVersionSubmodules> -->
- 		<tagNameFormat>${timestamp}-v@{project.version}</tagNameFormat>
-       <developmentVersion>1.2.8-${timestamp}</developmentVersion>
-       <releaseVersion>1.2.8-${timestamp}</releaseVersion>
-       
+				
+					<!-- Configuration for update-versions: -->
+<!-- 					<developmentVersion>1.2.9</developmentVersion> -->
+<!-- 					<releaseVersion>1.2.9</releaseVersion> -->
+<!-- 					<autoVersionSubmodules>true</autoVersionSubmodules> -->
+<!-- 					<updateDependencies>true</updateDependencies> -->
+
+					<!-- Configuration for prepare: -->
+					<preparationGoals>clean verify</preparationGoals>
+					<addSchema>true</addSchema>
+					<preparationGoals>true</preparationGoals>
+					<autoVersionSubmodules>true</autoVersionSubmodules>
+					<developmentVersion>1.2.9-${timestamp}</developmentVersion>
+					<releaseVersion>1.2.9-${timestamp}</releaseVersion>
+					<tagNameFormat>${timestamp}-v@{project.version}</tagNameFormat>
+					
+					<!-- Configuration for perform: -->
+<!-- 					<addSchema>true</addSchema> -->
+					
 				</configuration>
 			</plugin>
+			
+			<plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>build-helper-maven-plugin</artifactId>
+            <version>1.10</version>
+            <executions>
+                <execution>
+                    <id>timestamp-property</id>
+                    <goals>
+                        <goal>timestamp-property</goal>
+                    </goals>
+                    <configuration>
+                        <name>build.time</name>
+                        <pattern>yyyy.MM.dd hh:mm:ss</pattern>
+                        <locale>hu_HU</locale>
+                        <timeZone>HU</timeZone>
+                    </configuration>
+                </execution>
+            </executions>
+        </plugin>
 
 		</plugins>
 
