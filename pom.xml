@@ -8,7 +8,7 @@
 
 	<groupId>hu.prolan</groupId>
 	<artifactId>hu.prolan.parent</artifactId>
-	<version>1.2.6</version>
+	<version>1.2.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 
@@ -23,7 +23,7 @@
 	<scm>
 	<developerConnection>scm:git:https://github.com/fneska/maven_release_test.git</developerConnection>
 	
-    <tag>${timestamp} - v1.2.6 [${env}]</tag>
+    
   </scm>
 	<dependencies>
 		<dependency>
@@ -47,9 +47,8 @@
 				<artifactId>maven-release-plugin</artifactId>
 				<version>2.5.3</version>
 				<configuration>
-          <preparationGoals>clean verify</preparationGoals>
-        	<tagNameFormat>${timestamp} - v@{project.version} [${env}]</tagNameFormat>
-          <releaseProfiles>release</releaseProfiles>
+        <preparationGoals>clean verify</preparationGoals>
+        <tagNameFormat>v@{project.version}-${timestamp}</tagNameFormat>
         </configuration>
 			</plugin>
 		</plugins>
