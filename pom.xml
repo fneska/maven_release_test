@@ -54,7 +54,7 @@
 				<configuration>
 
 					<!-- Configuration for update-versions: -->
-					<developmentVersion>2.0</developmentVersion>
+					
 					<releaseVersion>2.0</releaseVersion>
 					<autoVersionSubmodules>true</autoVersionSubmodules>
 					<updateDependencies>true</updateDependencies>
