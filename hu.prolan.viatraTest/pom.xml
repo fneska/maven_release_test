@@ -3,12 +3,12 @@
 	<groupId>hu.prolan</groupId>
 	<artifactId>hu.prolan.viatraTest</artifactId>
 
-	<version>1.2.10-2018.04.17.13.50.43</version>
+	<version>1.2.10-2019.04.17.13.50.43-SNAPSHOT</version>
 
 	<parent>
 		<groupId>hu.prolan</groupId>
 		<artifactId>hu.prolan.parent</artifactId>
-		<version>1.2.10-2018.04.17.13.50.43</version>
+		<version>1.2.10-2019.04.17.13.50.43-SNAPSHOT</version>
 	</parent>
 
 	<build>
