@@ -8,7 +8,7 @@
 
 	<groupId>hu.prolan</groupId>
 	<artifactId>hu.prolan.parent</artifactId>
-	<version>1.2.9-SNAPSHOT</version>
+	<version>1.2.9-2018.04.17 11:59:14</version>
 	<packaging>pom</packaging>
 
 
@@ -17,7 +17,7 @@
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 		<timestamp>${maven.build.timestamp}</timestamp>
-		<maven.build.timestamp.format>yyyy.MM.dd HH:mm:ss</maven.build.timestamp.format>
+		<maven.build.timestamp.format>yyyy.MM.dd.HH.mm.ss</maven.build.timestamp.format>
 <!-- 		<project.scm.id>github.com</project.scm.id> -->
 	</properties>
 
@@ -25,7 +25,7 @@
 
 		<connection>scm:git:https://github.com/fneska/maven_release_test.git</connection>
 		<developerConnection>scm:git:https://github.com/fneska/maven_release_test.git</developerConnection>
-		<tag>2018-04-17T09:55:30Z-v1.2.8-2018-04-17T09:55:30Z</tag>
+		<tag>2018.04.17 11:59:14-v1.2.9-2018.04.17 11:59:14</tag>
 	</scm>
 	<dependencies>
 		<dependency>
@@ -83,7 +83,7 @@
                     </goals>
                     <configuration>
                         <name>build.time</name>
-                        <pattern>yyyy.MM.dd hh:mm:ss</pattern>
+                        <pattern>yyyy.MM.dd.hh.mm.ss</pattern>
                         <locale>hu_HU</locale>
                         <timeZone>HU</timeZone>
                     </configuration>
