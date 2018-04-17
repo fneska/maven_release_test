@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<prerequisites>
@@ -28,8 +29,8 @@
 		<developerConnection>scm:git:https://github.com/fneska/maven_release_test.git</developerConnection>
 		<tag>2018.04.17 11:59:14-v1.2.9-2018.04.17 11:59:14</tag>
 	</scm>
-	
- 
+
+
 	<dependencies>
 		<dependency>
 			<groupId>org.apache.maven.plugins</groupId>
@@ -52,49 +53,48 @@
 				<artifactId>maven-release-plugin</artifactId>
 				<version>2.5.3</version>
 				<configuration>
-				
+
 					<!-- Configuration for update-versions: -->
-<!-- 					<developmentVersion>1.2.9</developmentVersion> -->
-<!-- 					<releaseVersion>1.2.9</releaseVersion> -->
-<!-- 					<autoVersionSubmodules>true</autoVersionSubmodules> -->
-<!-- 					<updateDependencies>true</updateDependencies> -->
+					<!-- <developmentVersion>1.2.9</developmentVersion> -->
+					<!-- <releaseVersion>1.2.9</releaseVersion> -->
+					<!-- <autoVersionSubmodules>true</autoVersionSubmodules> -->
+					<!-- <updateDependencies>true</updateDependencies> -->
 
 					<!-- Configuration for prepare: -->
 					<preparationGoals>clean verify</preparationGoals>
-					<addSchema>true</addSchema>
 					<autoVersionSubmodules>true</autoVersionSubmodules>
-<!-- 					<developmentVersion>1.2.10-${timestamp}</developmentVersion> -->
+					<developmentVersion>1.2.10-${timestamp}</developmentVersion>
 					<releaseVersion>1.2.10-${timestamp}</releaseVersion>
 					<tagNameFormat>${timestamp}-v@{project.version}</tagNameFormat>
 					<pushChanges>true</pushChanges>
 					<username>fneska</username>
 					<password>jamiNa73</password>
-					
+
 					<!-- Configuration for perform: -->
-<!-- 					<addSchema>true</addSchema> -->
-					
+					<!-- <addSchema>true</addSchema> -->
+
 				</configuration>
 			</plugin>
-			
+
 			<plugin>
-            <groupId>org.codehaus.mojo</groupId>
-            <artifactId>build-helper-maven-plugin</artifactId>
-            <version>1.10</version>
-            <executions>
-                <execution>
-                    <id>timestamp-property</id>
-                    <goals>
-                        <goal>timestamp-property</goal>
-                    </goals>
-                    <configuration>
-                        <name>build.time</name>
-                        <pattern>yyyy.MM.dd.hh.mm.ss</pattern>
-                        <locale>hu_HU</locale>
-                        <timeZone>HU</timeZone>
-                    </configuration>
-                </execution>
-            </executions>
-        </plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>build-helper-maven-plugin</artifactId>
+				<version>1.10</version>
+				<executions>
+					<execution>
+						<id>timestamp-property</id>
+						<goals>
+							<goal>timestamp-property</goal>
+						</goals>
+						<configuration>
+							<name>build.time</name>
+							<pattern>yyyy.MM.dd.hh.mm.ss</pattern>
+							<locale>hu_HU</locale>
+							<timeZone>HU</timeZone>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
 
 		</plugins>
 
