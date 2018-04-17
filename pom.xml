@@ -49,7 +49,7 @@
 				<version>2.5.3</version>
 				<configuration>
         <preparationGoals>clean verify</preparationGoals>
-        <tagNameFormat>v@{project.version}-${maven.build.timestamp}</tagNameFormat>
+        <tagNameFormat>v@{project.version}.${maven.build.timestamp}</tagNameFormat>
         </configuration>
 			</plugin>
 		</plugins>
