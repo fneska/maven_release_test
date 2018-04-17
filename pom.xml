@@ -52,9 +52,9 @@
 <!-- 					<preparationGoals>clean verify</preparationGoals> -->
 <!-- 					 <tagNameFormat>${timestamp}-v@{project.version}</tagNameFormat> -->
 <preparationGoals>clean verify</preparationGoals>
-       <addSchema>true</addSchema>
-       <preparationGoals>true</preparationGoals>
-       <autoVersionSubmodules>true</autoVersionSubmodules>
+<!--        <addSchema>true</addSchema> -->
+<!--        <preparationGoals>true</preparationGoals> -->
+<!--        <autoVersionSubmodules>true</autoVersionSubmodules> -->
        <developmentVersion>1.2.0-${timestamp}</developmentVersion>
        <updateDependencies>true</updateDependencies>
 				</configuration>
