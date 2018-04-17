@@ -55,8 +55,8 @@
 <!--        <addSchema>true</addSchema> -->
 <!--        <preparationGoals>true</preparationGoals> -->
 <!--        <autoVersionSubmodules>true</autoVersionSubmodules> -->
-       <developmentVersion>1.2.0-${timestamp}</developmentVersion>
-       <updateDependencies>true</updateDependencies>
+       <developmentVersion>1.2.8-${timestamp}</developmentVersion>
+       
 				</configuration>
 			</plugin>
 
