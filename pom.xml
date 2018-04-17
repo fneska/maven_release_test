@@ -9,7 +9,7 @@
 	<groupId>hu.prolan</groupId>
 	<artifactId>hu.prolan.parent</artifactId>
 
-	<version>1.2.11-2019.04.17.14.41.22-SNAPSHOT</version>
+	<version>1.2.11-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 
@@ -63,8 +63,8 @@
 					<preparationGoals>clean verify</preparationGoals>
 				<autoVersionSubmodules>true</autoVersionSubmodules>
 					<allowTimestampedSnapshots>true</allowTimestampedSnapshots>
-					<developmentVersion>1.2.11-${timestamp}</developmentVersion>
-					<releaseVersion>1.2.11-${timestamp}</releaseVersion>
+					<developmentVersion>1.2.12-${timestamp}</developmentVersion>
+					<releaseVersion>1.2.12-${timestamp}</releaseVersion>
 					<tagNameFormat>${timestamp}-v@{project.version}</tagNameFormat>
 					<pushChanges>true</pushChanges> 
 <!-- 					<releaseProfiles>release</releaseProfiles> -->
