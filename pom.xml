@@ -23,8 +23,7 @@
 	</properties>
 
 	<scm>
-
-		<developerConnection>scm:git:https://github.com/fneska/maven_release_test.git</developerConnection>
+<developerConnection>scm:git:https://github.com/fneska/maven_release_test.git</developerConnection>
 	</scm>
 
 
