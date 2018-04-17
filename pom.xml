@@ -61,7 +61,8 @@
 
 					<!-- Configuration for prepare: -->
 					<preparationGoals>clean verify</preparationGoals>
-					
+					<developmentVersion>1.2.9</developmentVersion>
+					<releaseVersion>1.2.9</releaseVersion>
 				
 					<tagNameFormat>${timestamp}-v@{project.version}</tagNameFormat>
 					<pushChanges>true</pushChanges> 
