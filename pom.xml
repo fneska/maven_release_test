@@ -65,7 +65,7 @@
 				<allowTimestampedSnapshots>true</allowTimestampedSnapshots>
 <!-- 					<developmentVersion>1.2.11-${timestamp}</developmentVersion> -->
 <!-- 					<releaseVersion>1.2.11-${timestamp}</releaseVersion> -->
-<!-- 					<tagNameFormat>${timestamp}-v@{project.version}</tagNameFormat> -->
+					<tagNameFormat>${timestamp}-v@{project.version}</tagNameFormat>
 					<pushChanges>false</pushChanges> 
 <!-- 					<releaseProfiles>release</releaseProfiles> -->
 					<username>fneska</username>
