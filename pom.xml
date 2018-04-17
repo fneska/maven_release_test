@@ -24,8 +24,8 @@
 
 	<scm>
 
-		<connection>scm:git:https://github.com/fneska/maven_release_test.git</connection>
-		<developerConnection>scm:git:https://github.com/fneska/maven_release_test.git</developerConnection>
+<!-- 		<connection>scm:git:https://github.com/fneska/maven_release_test.git</connection> -->
+		<developerConnection>scm:git:file:///C:/git/repos/maven_release_test1/maven_release_test/trunk/</developerConnection>
 	
 	</scm>
 
