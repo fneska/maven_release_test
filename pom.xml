@@ -71,8 +71,8 @@
 					<tagNameFormat>${timestamp}-v@{project.version}</tagNameFormat>
 					<pushChanges>false</pushChanges> 
 <!-- 					<releaseProfiles>release</releaseProfiles> -->
-					<username>fneska</username>
-					<password>jamiNa73</password>
+					<!-- <username>fneska</username>
+					<password>jamiNa73</password> -->
 
 <!-- 					Configuration for perform: -->
 <!-- 					<addSchema>true</addSchema> --> 
