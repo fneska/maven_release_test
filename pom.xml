@@ -23,7 +23,7 @@
 
 	<scm>
 		
-		<developerConnection>scm:git:file://localhost/maven_release_test1/maven_release_test.git:</developerConnection>
+		<developerConnection>scm:git:file://localhost/c:\users\fekete.agnes\my_github\maven_release_test1/maven_release_test.git:</developerConnection>
 	<!-- 	<developerConnection>scm:git:https://github.com/fneska/maven_release_test.git</developerConnection> -->
 	  <tag>2018-04-17 08:15%20-%20v1.2.4%20%5B${env}%5D</tag>
   </scm>
