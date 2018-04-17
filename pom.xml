@@ -56,7 +56,7 @@
 
 					<!-- Configuration for update-versions: -->
 					
-<!-- 					<releaseVersion>2.0</releaseVersion> -->
+					<releaseVersion>1.0</releaseVersion>
 					<autoVersionSubmodules>true</autoVersionSubmodules>
 					<updateDependencies>true</updateDependencies>
 					<tagBase>
