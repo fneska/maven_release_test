@@ -16,8 +16,8 @@
 		<manifest-location>META-INF</manifest-location>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
-	
-    <maven.build.timestamp.format>yyyyMMdd-HHmm</maven.build.timestamp.format>
+	 <timestamp>${maven.build.timestamp}</timestamp>
+    <maven.build.timestamp.format>yyyy-MM-dd HH:mm</maven.build.timestamp.format>
   </properties>
 
 	<scm>
@@ -48,7 +48,7 @@
 				<version>2.5.3</version>
 				<configuration>
         <preparationGoals>clean verify</preparationGoals>
-        <tagNameFormat>v@{project.version}.${maven.build.timestamp}</tagNameFormat>
+        <tagNameFormat>timestamp</tagNameFormat>
         </configuration>
 			</plugin>
 		</plugins>
