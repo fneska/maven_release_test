@@ -24,10 +24,9 @@
 
 	<scm>
 
-		<connection>scm:git:https://github.com/fneska/maven_release_test.git</connection>
-		<developerConnection>scm:git:https://github.com/fneska/maven_release_test.git</developerConnection>
 		
-	  <tag>HEAD</tag>
+		<developerConnection>scm:git:https://github.com/fneska/maven_release_test.git</developerConnection>
+	
   </scm>
 
 
@@ -62,9 +61,9 @@
 
 					<!-- Configuration for prepare: -->
 					<preparationGoals>clean verify</preparationGoals>
-					<developmentVersion>1.2.9</developmentVersion>
-					<releaseVersion>1.2.9</releaseVersion>
-				
+					
+					<releaseVersion>1.2.11-${timestamp}</releaseVersion>
+					<autoVersionSubmodules>true</autoVersionSubmodules>
 					<tagNameFormat>${timestamp}-v@{project.version}</tagNameFormat>
 					<pushChanges>true</pushChanges> 
 <!-- 					<releaseProfiles>release</releaseProfiles> -->
