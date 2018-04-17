@@ -55,7 +55,9 @@
 <!--        <addSchema>true</addSchema> -->
 <!--        <preparationGoals>true</preparationGoals> -->
 <!--        <autoVersionSubmodules>true</autoVersionSubmodules> -->
+ 		<tagNameFormat>${timestamp}-v@{project.version}</tagNameFormat>
        <developmentVersion>1.2.8-${timestamp}</developmentVersion>
+       <releaseVersion>1.2.8-${timestamp}</releaseVersion>
        
 				</configuration>
 			</plugin>
