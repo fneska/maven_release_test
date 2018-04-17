@@ -8,7 +8,7 @@
 
 	<groupId>hu.prolan</groupId>
 	<artifactId>hu.prolan.parent</artifactId>
-	<version>1.2.4</version>
+	<version>1.2.4-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 
@@ -17,13 +17,14 @@
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 		<timestamp>${maven.build.timestamp}</timestamp>
-		<maven.build.timestamp.format>yyyy-MM-dd HH:mm</maven.build.timestamp.format>
+		<maven.build.timestamp.format>yyyy-MM-dd'T'HH:mm:ss'Z'</maven.build.timestamp.format>
 		<project.scm.id>github.com</project.scm.id>
 	</properties>
 
 	<scm>
-		<connection>scm:git:https://github.com/fneska/maven_release_test.git</connection>
-		<developerConnection>scm:git:https://github.com/fneska/maven_release_test.git</developerConnection>
+		
+		<developerConnection>scm:git:file://localhost/maven_release_test1/maven_release_test.git:</developerConnection>
+	<!-- 	<developerConnection>scm:git:https://github.com/fneska/maven_release_test.git</developerConnection> -->
 	  <tag>2018-04-17 08:15%20-%20v1.2.4%20%5B${env}%5D</tag>
   </scm>
 	<dependencies>
@@ -49,7 +50,7 @@
 				<version>2.5.3</version>
 				<configuration>
 					<preparationGoals>clean verify</preparationGoals>
-					 <tagNameFormat>${timestamp}%20-%20v@{project.version}%20%5B${env}%5D</tagNameFormat>
+					 <tagNameFormat>${timestamp}-v@{project.version}</tagNameFormat>
        
 				</configuration>
 			</plugin>
