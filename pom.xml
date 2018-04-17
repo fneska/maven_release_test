@@ -63,8 +63,8 @@
 					<preparationGoals>clean verify</preparationGoals>
 				<autoVersionSubmodules>true</autoVersionSubmodules>
 					<allowTimestampedSnapshots>true</allowTimestampedSnapshots>
-					<developmentVersion>1.2.11${timestamp}</developmentVersion>
-					<releaseVersion>1.2.11${timestamp}</releaseVersion>
+					<developmentVersion>1.2.11-${timestamp}</developmentVersion>
+					<releaseVersion>1.2.11-${timestamp}</releaseVersion>
 					<tagNameFormat>${timestamp}-v@{project.version}</tagNameFormat>
 					<pushChanges>true</pushChanges> 
 <!-- 					<releaseProfiles>release</releaseProfiles> -->
