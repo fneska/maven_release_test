@@ -9,7 +9,7 @@
 	<groupId>hu.prolan</groupId>
 	<artifactId>hu.prolan.parent</artifactId>
 
-	<version>1.2.3-SNAPSHOT</version>
+	<version>1.2.4-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 
@@ -54,19 +54,19 @@
 				<configuration>
 
 					<!-- Configuration for update-versions: -->
-					<developmentVersion>1.2.5-${timestamp}</developmentVersion>
-					<releaseVersion>1.2.5-${timestamp}</releaseVersion>
+					<developmentVersion>2.0</developmentVersion>
+					<releaseVersion>2.0</releaseVersion>
 					<autoVersionSubmodules>true</autoVersionSubmodules>
 					<updateDependencies>true</updateDependencies>
 
 <!-- 					 Configuration for prepare: -->
-					<preparationGoals>clean verify</preparationGoals>
+<!-- 					<preparationGoals>clean verify</preparationGoals> -->
 <!-- 				<autoVersionSubmodules>true</autoVersionSubmodules> -->
 <!-- 				<allowTimestampedSnapshots>true</allowTimestampedSnapshots> -->
 <!-- 					<developmentVersion>1.2.11-${timestamp}</developmentVersion> -->
 <!-- 					<releaseVersion>1.2.11-${timestamp}</releaseVersion> -->
-					<tagNameFormat>${timestamp}-v@{project.version}</tagNameFormat>
-					<pushChanges>false</pushChanges> 
+<!-- 					<tagNameFormat>${timestamp}-v@{project.version}</tagNameFormat> -->
+<!-- 					<pushChanges>false</pushChanges>  -->
 <!-- 					<releaseProfiles>release</releaseProfiles> -->
 <!-- 					<username>fneska</username> -->
 <!-- 					<password>jamiNa73</password> -->
