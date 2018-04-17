@@ -62,11 +62,12 @@
 					<!-- Configuration for prepare: -->
 					<preparationGoals>clean verify</preparationGoals>
 					<addSchema>true</addSchema>
-					<preparationGoals>true</preparationGoals>
+					<allowTimestampedSnapshots>true</allowTimestampedSnapshots>
 					<autoVersionSubmodules>true</autoVersionSubmodules>
 					<developmentVersion>1.2.9-${timestamp}</developmentVersion>
 					<releaseVersion>1.2.9-${timestamp}</releaseVersion>
 					<tagNameFormat>${timestamp}-v@{project.version}</tagNameFormat>
+					<pushChanges>false</pushChanges>
 					
 					<!-- Configuration for perform: -->
 <!-- 					<addSchema>true</addSchema> -->
