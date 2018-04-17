@@ -9,7 +9,7 @@
 	<groupId>hu.prolan</groupId>
 	<artifactId>hu.prolan.parent</artifactId>
 
-	<version>1.0</version>
+	<version>1.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 
@@ -28,7 +28,7 @@
 	
 		<developerConnection>scm:git:file://C:/git/repos/maven_release_test1/my-app-maven_release_test/.git/</developerConnection>
 	
-	  <tag>2018-04-17-21-22-35-v1.0</tag>
+	  <tag>HEAD</tag>
   </scm>
 
 
