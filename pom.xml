@@ -55,8 +55,8 @@
 				<configuration>
 
 					<!-- Configuration for update-versions: -->
-					<developmentVersion>1.2.5-${timestamp}</developmentVersion>
-					<releaseVersion>1.2.5-${timestamp}</releaseVersion>
+					<developmentVersion>1.2.6-${timestamp}</developmentVersion>
+					<releaseVersion>1.2.6-${timestamp}</releaseVersion>
 					<autoVersionSubmodules>true</autoVersionSubmodules>
 					<updateDependencies>true</updateDependencies>
 
