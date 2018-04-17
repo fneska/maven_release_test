@@ -24,10 +24,7 @@
 
 	<scm>
 
-		<connection>scm:git:file://C:/git/repos/maven_release_test1/my-app-maven_release_test/.git/</connection>
-	
-		<developerConnection>scm:git:file://C:/git/repos/maven_release_test1/my-app-maven_release_test/.git/</developerConnection>
-	
+		<developerConnection>scm:git:https://github.com/fneska/maven_release_test.git</developerConnection>
 	</scm>
 
 
@@ -59,9 +56,9 @@
 					<releaseVersion>1.0</releaseVersion>
 					<autoVersionSubmodules>true</autoVersionSubmodules>
 					<updateDependencies>true</updateDependencies>
-					<tagBase>
-            file://C:/git/repos/maven_release_test1/my-app-maven_release_test/.git
-          </tagBase>
+<!-- 					<tagBase> -->
+<!--             file://C:/git/repos/maven_release_test1/my-app-maven_release_test/.git -->
+<!--           </tagBase> -->
 
 <!-- 					 Configuration for prepare: -->
 <!-- 					<preparationGoals>clean verify</preparationGoals> -->
@@ -70,10 +67,10 @@
 <!-- 					<developmentVersion>1.2.11-${timestamp}</developmentVersion> -->
 <!-- 					<releaseVersion>1.2.11-${timestamp}</releaseVersion> -->
 					<tagNameFormat>${timestamp}-v@{project.version}</tagNameFormat>
-					<pushChanges>false</pushChanges> 
+<!-- 					<pushChanges>false</pushChanges>  -->
 <!-- 					<releaseProfiles>release</releaseProfiles> -->
-					<!-- <username>fneska</username>
-					<password>jamiNa73</password> -->
+<username>fneska</username> 
+			<password>jamiNa73</password>
 
 <!-- 					Configuration for perform: -->
 <!-- 					<addSchema>true</addSchema> --> 
