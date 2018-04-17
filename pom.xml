@@ -55,9 +55,12 @@
 
 					<!-- Configuration for update-versions: -->
 					
-					<releaseVersion>2.0</releaseVersion>
+<!-- 					<releaseVersion>2.0</releaseVersion> -->
 					<autoVersionSubmodules>true</autoVersionSubmodules>
 					<updateDependencies>true</updateDependencies>
+					<tagBase>
+            file:///C:/git/repos/maven_release_test1/my-app-maven_release_test/tags
+          </tagBase>
 
 <!-- 					 Configuration for prepare: -->
 <!-- 					<preparationGoals>clean verify</preparationGoals> -->
