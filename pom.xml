@@ -27,13 +27,14 @@
 	
   </scm>
 
-<!-- <distributionManagement> -->
-<!--        <repository> -->
-<!--          <id>internal.repo</id> -->
-<!--          <name>Internal repo</name> -->
-<!--          <url> file://C:/users/fekete.agnes/my_github/maven_release_test1/maven_release_test/</url> -->
-<!--        </repository> -->
-<!--    </distributionManagement> -->
+<distributionManagement>
+       <repository>
+         <id>internal.repo</id>
+         <name>Internal repo</name>
+         <url> file://C:/users/fekete.agnes/my_github/maven_release_test1/maven_release_test</url>
+         <layout>default</layout>
+       </repository>
+   </distributionManagement>
    
 	<dependencies>
 		<dependency>
@@ -63,9 +64,9 @@
 					<releaseVersion>1.0</releaseVersion>
 					<autoVersionSubmodules>true</autoVersionSubmodules>
 					<updateDependencies>true</updateDependencies>
-					<tagBase>
-              file://C:/git/user/fekete.agnes/my_github/maven_release_test1/my-app-maven_release_test/.git
-          </tagBase>
+<!-- 					<tagBase> -->
+<!--               file://C:/git/user/fekete.agnes/my_github/maven_release_test1/my-app-maven_release_test/.git -->
+<!--           </tagBase> -->
 
 <!-- 					 Configuration for prepare: -->
 <!-- 					<preparationGoals>clean verify</preparationGoals> -->
