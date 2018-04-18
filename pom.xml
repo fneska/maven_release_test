@@ -9,7 +9,7 @@
 	<groupId>hu.prolan</groupId>
 	<artifactId>hu.prolan.parent</artifactId>
 
-	<version>1.2.11-SNAPSHOT</version>
+	<version>1.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 
@@ -18,16 +18,14 @@
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 		<timestamp>${maven.build.timestamp}</timestamp>
-		<maven.build.timestamp.format>yyyy-MM-dd'T'HH:mm:ss'Z'</maven.build.timestamp.format>
+		<maven.build.timestamp.format>yyyy-MM-dd-HH-mm-ss</maven.build.timestamp.format>
 
 	</properties>
 
 	<scm>
-
-		<connection>scm:git:https://github.com/fneska/maven_release_test.git</connection>
-		<developerConnection>scm:git:https://github.com/fneska/maven_release_test.git</developerConnection>
-		<tag>2018.04.17 11:59:14-v1.2.9-2018.04.17 11:59:14</tag>
-	</scm>
+<developerConnection>scm:git:https://github.com/fneska/maven_release_test.git</developerConnection>
+	
+  </scm>
 
 
 	<dependencies>
@@ -54,26 +52,29 @@
 				<configuration>
 
 					<!-- Configuration for update-versions: -->
-					<!-- <developmentVersion>1.2.9</developmentVersion> -->
-					<!-- <releaseVersion>1.2.9</releaseVersion> -->
-					<!-- <autoVersionSubmodules>true</autoVersionSubmodules> -->
-					<!-- <updateDependencies>true</updateDependencies> -->
+			
+					<releaseVersion>1.0</releaseVersion>
+					<autoVersionSubmodules>true</autoVersionSubmodules>
+					<updateDependencies>true</updateDependencies>
+<!-- 					<tagBase> -->
+<!--             file://C:/git/repos/maven_release_test1/my-app-maven_release_test/.git -->
+<!--           </tagBase> -->
 
-					<!-- Configuration for prepare: -->
-					<preparationGoals>clean verify</preparationGoals>
-				<autoVersionSubmodules>true</autoVersionSubmodules>
-				<updateDependencies>true</updateDependencies>
-<!-- 				<allowTimestampedSnapshots>true</allowTimestampedSnapshots> -->
-					<developmentVersion>1.2.11-${timestamp}</developmentVersion>
-					<releaseVersion>1.2.11-${timestamp}</releaseVersion>
+<!-- 					 Configuration for prepare: -->
+<!-- 					<preparationGoals>clean verify</preparationGoals> -->
+<!-- 				<autoVersionSubmodules>true</autoVersionSubmodules> -->
+				<allowTimestampedSnapshots>true</allowTimestampedSnapshots>
+<!-- 					<developmentVersion>1.2.11-${timestamp}</developmentVersion> -->
+<!-- 					<releaseVersion>1.2.11-${timestamp}</releaseVersion> -->
+
 					<tagNameFormat>${timestamp}-v@{project.version}</tagNameFormat>
-					<pushChanges>true</pushChanges> 
+<!-- 					<pushChanges>false</pushChanges>  -->
 <!-- 					<releaseProfiles>release</releaseProfiles> -->
-<!-- 					<username>fneska</username> -->
-<!-- 					<password>jamiNa73</password> -->
+<username>fneska</username> 
+			<password>jamiNa73</password>
 
-					<!-- Configuration for perform: -->
-					<!-- <addSchema>true</addSchema> -->
+<!-- 					Configuration for perform: -->
+<!-- 					<addSchema>true</addSchema> --> 
 
 				</configuration>
 			</plugin>

@@ -3,11 +3,19 @@
 	<groupId>hu.prolan</groupId>
 	<artifactId>hu.prolan.xtendtest</artifactId>
 
+<<<<<<< HEAD
 	<version>1.2.11-SNAPSHOT</version>
 <parent>
 		<groupId>hu.prolan</groupId>
 		<artifactId>hu.prolan.parent</artifactId>
 		<version>1.2.11-SNAPSHOT</version>
+=======
+	<version>1.1-SNAPSHOT</version>
+<parent>
+		<groupId>hu.prolan</groupId>
+		<artifactId>hu.prolan.parent</artifactId>
+		<version>1.1-SNAPSHOT</version>
+>>>>>>> 2f1536a30625a75ec3fb60c7e7c5586c1761237f
 	</parent>
 	
 	
