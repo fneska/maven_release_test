@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<prerequisites>
@@ -23,20 +24,21 @@
 	</properties>
 
 	<scm>
-<developerConnection>scm:git:https://github.com/fneska/maven_release_test.git</developerConnection>
-	
-    <tag>HEAD</tag>
-  </scm>
+		<connection>scm:git:https://github.com/fneska/maven_release_test.git</connection>
+		<developerConnection>scm:git:https://github.com/fneska/maven_release_test.git</developerConnection>
 
-<distributionManagement>
-       <repository>
-         <id>internal.repo</id>
-         <name>Internal repo</name>
-         <url> file://C:/users/fekete.agnes/my_github/maven_release_test1/maven_release_test</url>
-         <layout>default</layout>
-       </repository>
-   </distributionManagement>
-   
+		<tag>HEAD</tag>
+	</scm>
+
+	<distributionManagement>
+		<repository>
+			<id>internal.repo</id>
+			<name>Internal repo</name>
+			<url> file://C:/users/fekete.agnes/my_github/maven_release_test1/maven_release_test</url>
+			<layout>default</layout>
+		</repository>
+	</distributionManagement>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.apache.maven.plugins</groupId>
@@ -61,35 +63,36 @@
 				<configuration>
 
 					<!-- Configuration for update-versions: -->
-			
+					
 					<releaseVersion>1.0</releaseVersion>
 					<autoVersionSubmodules>true</autoVersionSubmodules>
 					<updateDependencies>true</updateDependencies>
-			<tagBase>
-              file://C:/user/fekete.agnes/my_github/maven_release_test1/my-app-maven_release_test
-          </tagBase>
+					<urlConnection>scm:git:https://github.com/fneska/maven_release_test.git</urlConnection>
+					<tagBase>
+						scm:git:https://github.com/fneska/maven_release_test.git
+					</tagBase>
 
-<!-- 					 Configuration for prepare: -->
-<!-- 					<preparationGoals>clean verify</preparationGoals> -->
-<!-- 				<autoVersionSubmodules>true</autoVersionSubmodules> -->
-				<allowTimestampedSnapshots>true</allowTimestampedSnapshots>
-<!-- 					<developmentVersion>1.2.11-${timestamp}</developmentVersion> -->
-<!-- 					<releaseVersion>1.2.11-${timestamp}</releaseVersion> -->
+					<!-- Configuration for prepare: -->
+					<!-- <preparationGoals>clean verify</preparationGoals> -->
+					<!-- <autoVersionSubmodules>true</autoVersionSubmodules> -->
+					<allowTimestampedSnapshots>true</allowTimestampedSnapshots>
+					<!-- <developmentVersion>1.2.11-${timestamp}</developmentVersion> -->
+					<!-- <releaseVersion>1.2.11-${timestamp}</releaseVersion> -->
 
 					<tagNameFormat>${timestamp}-v@{project.version}</tagNameFormat>
-<!-- 					<pushChanges>false</pushChanges>  -->
-<!-- 					<releaseProfiles>release</releaseProfiles> -->
-			<username>fneska</username> 
-			<password>jamiNa73</password>
+					<!-- <pushChanges>false</pushChanges> -->
+					<!-- <releaseProfiles>release</releaseProfiles> -->
+					<username>fneska</username>
+					<password>jamiNa73</password>
 
-<!-- 					Configuration for perform: -->
-<!-- 					<addSchema>true</addSchema> --> 
+					<!-- Configuration for perform: -->
+					<!-- <addSchema>true</addSchema> -->
 
 				</configuration>
 			</plugin>
-			
-			
-			
+
+
+
 		</plugins>
 
 	</build>

@@ -25,7 +25,7 @@
 	<scm>
 <developerConnection>scm:git:https://github.com/fneska/maven_release_test.git</developerConnection>
 	
-    <tag>2018-04-18-07-53-03-v1.0</tag>
+    <tag>2018-04-18-08-15-17-v1.0</tag>
   </scm>
 
 <distributionManagement>
@@ -65,9 +65,9 @@
 					<releaseVersion>1.0</releaseVersion>
 					<autoVersionSubmodules>true</autoVersionSubmodules>
 					<updateDependencies>true</updateDependencies>
-<!-- 					<tagBase> -->
-<!--               file://C:/git/user/fekete.agnes/my_github/maven_release_test1/my-app-maven_release_test/.git -->
-<!--           </tagBase> -->
+			<tagBase>
+              file://C:/user/fekete.agnes/my_github/maven_release_test1/my-app-maven_release_test
+          </tagBase>
 
 <!-- 					 Configuration for prepare: -->
 <!-- 					<preparationGoals>clean verify</preparationGoals> -->
@@ -79,7 +79,7 @@
 					<tagNameFormat>${timestamp}-v@{project.version}</tagNameFormat>
 <!-- 					<pushChanges>false</pushChanges>  -->
 <!-- 					<releaseProfiles>release</releaseProfiles> -->
-<username>fneska</username> 
+			<username>fneska</username> 
 			<password>jamiNa73</password>
 
 <!-- 					Configuration for perform: -->
