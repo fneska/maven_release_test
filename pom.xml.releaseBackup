@@ -9,7 +9,7 @@
 	<groupId>hu.prolan</groupId>
 	<artifactId>hu.prolan.parent</artifactId>
 
-	<version>1.1.2-SNAPSHOT</version>
+	<version>1.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 
@@ -23,8 +23,8 @@
 	</properties>
 
 	<scm>
-		<connection>file://C:/users/fekete.agnes/my_github/maven_release_test1/maven_release_test</connection>
-		<developerConnection>file://C:/users/fekete.agnes/my_github/maven_release_test1/maven_release_test</developerConnection>
+		<connection>scm:git:https://github.com/fneska/maven_release_test.git</connection>
+		<developerConnection>scm:git:https://github.com/fneska/maven_release_test.git</developerConnection>
 
 		<tag>HEAD</tag>
 	</scm>
@@ -66,9 +66,9 @@
 					
 					<autoVersionSubmodules>true</autoVersionSubmodules>
 					<updateDependencies>true</updateDependencies>
-					<urlConnection>file://C:/users/fekete.agnes/my_github/maven_release_test1/maven_release_test</urlConnection>
+					<urlConnection>scm:git:https://github.com/fneska/maven_release_test.git</urlConnection>
 					<tagBase>
-						file://C:/users/fekete.agnes/my_github/maven_release_test1/maven_release_test
+						scm:git:https://github.com/fneska/maven_release_test.git
 					</tagBase>
 
 					
