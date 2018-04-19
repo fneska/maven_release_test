@@ -23,8 +23,8 @@
 	</properties>
 
 	<scm>
-		<connection>file://C:/users/fekete.agnes/my_github/maven_release_test1/maven_release_test/.git</connection>
-		<developerConnection>file://C:/users/fekete.agnes/my_github/maven_release_test1/maven_release_test/.git</developerConnection>
+		<connection>file://localhost/C:/users/fekete.agnes/my_github/maven_release_test1/maven_release_test</connection>
+		<developerConnection>file://localhost/C:/users/fekete.agnes/my_github/maven_release_test1/maven_release_test</developerConnection>
 
 		<tag>HEAD</tag>
 	</scm>
@@ -66,9 +66,9 @@
 					
 					<autoVersionSubmodules>true</autoVersionSubmodules>
 					<updateDependencies>true</updateDependencies>
-					<urlConnection>file://C:/users/fekete.agnes/my_github/maven_release_test1/maven_release_test/.git</urlConnection>
+					<urlConnection>file://localhost/C:/users/fekete.agnes/my_github/maven_release_test1/maven_release_test</urlConnection>
 					<tagBase>
-						file://C:/users/fekete.agnes/my_github/maven_release_test1/maven_release_test/.git
+						file://localhost/C:/users/fekete.agnes/my_github/maven_release_test1/maven_release_test
 					</tagBase>
 
 					
