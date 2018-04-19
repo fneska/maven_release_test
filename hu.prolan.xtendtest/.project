@@ -32,5 +32,10 @@
 			<type>1</type>
 			<location>C:/Users/fekete.agnes/my_github/maven_release_test1/maven_release_test/pom.xml</location>
 		</link>
+		<link>
+			<name>pom_root.xml</name>
+			<type>1</type>
+			<location>C:/Users/fekete.agnes/my_github/maven_release_test1/maven_release_test/pom.xml</location>
+		</link>
 	</linkedResources>
 </projectDescription>
