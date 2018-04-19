@@ -3,10 +3,11 @@
   <groupId>hu.prolan</groupId>
   <artifactId>hu.prolan.viatraTest</artifactId>
   <versioning>
-    <release>1.0</release>
+    <release>1.1.2</release>
     <versions>
       <version>1.0</version>
+      <version>1.1.2</version>
     </versions>
-    <lastUpdated>20180418092608</lastUpdated>
+    <lastUpdated>20180419112524</lastUpdated>
   </versioning>
 </metadata>
