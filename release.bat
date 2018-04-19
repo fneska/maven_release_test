@@ -1,1 +1,1 @@
-call mvn clean install 
+call mvn release:prepare -DallowTimestampedSnapshots=true -DautoVersionSubmodules=true -DpushChanges=false updateDependencies=true
