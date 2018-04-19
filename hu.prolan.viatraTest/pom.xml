@@ -2,12 +2,12 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>hu.prolan</groupId>
 	<artifactId>hu.prolan.viatraTest</artifactId>
-	<version>1.1.6</version>
+	<version>1.1.7-SNAPSHOT</version>
 
 	<parent>
 		<groupId>hu.prolan</groupId>
 		<artifactId>hu.prolan.parent</artifactId>
-		<version>1.1.6</version>
+		<version>1.1.7-SNAPSHOT</version>
 	</parent>
 
 	
