@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<prerequisites>
+		<maven>3.0</maven>
+	</prerequisites>
+
+	<groupId>hu.prolan</groupId>
+	<artifactId>hu.prolan.parent</artifactId>
+
+	<version>1.1.6</version>
+	<packaging>pom</packaging>
+
+
+	<properties>
+		<manifest-location>META-INF</manifest-location>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<timestamp>${maven.build.timestamp}</timestamp>
+		<maven.build.timestamp.format>yyyy-MM-dd-HH-mm-ss</maven.build.timestamp.format>
+
+	</properties>
+
+	<scm>
+		<connection>scm:gitfile://C:/users/fekete.agnes/my_github/maven_release_test1/maven_release_test</connection>
+		<developerConnection>scm:git:file://C:/users/fekete.agnes/my_github/maven_release_test1/maven_release_test</developerConnection>
+
+		<tag>hu.prolan.parent-1.1.6</tag>
+	</scm>
+
+	<distributionManagement>
+		<repository>
+			<id>internal.repo</id>
+			<name>Internal repo</name>
+			<url> file://C:/users/fekete.agnes/my_github/maven_release_test1/maven_release_test</url>
+			<layout>default</layout>
+		</repository>
+	</distributionManagement>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-release-plugin</artifactId>
+			<version>2.5.3</version>
+			<type>maven-plugin</type>
+		</dependency>
+	</dependencies>
+	<modules>
+		<module>hu.prolan.viatraTest</module>
+		<module>hu.prolan.xtendtest</module>
+	</modules>
+
+	<build>
+		<sourceDirectory>src</sourceDirectory>
+
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-release-plugin</artifactId>
+				<version>2.5.3</version>
+				<configuration>
+
+				
+					
+					
+					<autoVersionSubmodules>true</autoVersionSubmodules>
+					<updateDependencies>true</updateDependencies>
+					<urlConnection>scm:git:file://C:/users/fekete.agnes/my_github/maven_release_test1/maven_release_test</urlConnection>
+					<tagBase>
+						scm:git:file://C:/users/fekete.agnes/my_github/maven_release_test1/maven_release_test
+					</tagBase>
+
+					
+					
+					<autoVersionSubmodules>true</autoVersionSubmodules>
+					<allowTimestampedSnapshots>true</allowTimestampedSnapshots>
+					
+
+					
+					<pushChanges>false</pushChanges>
+					
+
+					
+				</configuration>
+				
+			</plugin>
+
+
+
+		</plugins>
+
+	</build>
+
+</project>
