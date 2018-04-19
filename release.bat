@@ -1,1 +1,1 @@
-call mvn release:prepare -DallowTimestampedSnapshots=true -DautoVersionSubmodules=true -DpushChanges=false updateDependencies=true
+call mvn release:prepare -DallowTimestampedSnapshots=true -DautoVersionSubmodules=true -DpushChanges=false updateDependencies=true -DtagBase=scm:git:https://github.com/fneska/maven_release_test.git
