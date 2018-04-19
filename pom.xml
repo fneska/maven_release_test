@@ -61,9 +61,9 @@
 				<version>2.5.3</version>
 				<configuration>
 
-					<!-- Configuration for update-versions: -->
+				
 					
-					<releaseVersion>1.0</releaseVersion>
+					
 					<autoVersionSubmodules>true</autoVersionSubmodules>
 					<updateDependencies>true</updateDependencies>
 					<urlConnection>scm:git:https://github.com/fneska/maven_release_test.git</urlConnection>
@@ -71,22 +71,19 @@
 						scm:git:https://github.com/fneska/maven_release_test.git
 					</tagBase>
 
-					<!-- Configuration for prepare: -->
-					<!-- <preparationGoals>clean verify</preparationGoals> -->
-					<!-- <autoVersionSubmodules>true</autoVersionSubmodules> -->
+					
+					
+					<autoVersionSubmodules>true</autoVersionSubmodules>
 					<allowTimestampedSnapshots>true</allowTimestampedSnapshots>
-					<!-- <developmentVersion>1.2.11-${timestamp}</developmentVersion> -->
-					<!-- <releaseVersion>1.2.11-${timestamp}</releaseVersion> -->
+					
 
-					<tagNameFormat>${timestamp}-v@{project.version}</tagNameFormat>
-					<!-- <pushChanges>false</pushChanges> -->
-					<!-- <releaseProfiles>release</releaseProfiles> -->
+					
+					<pushChanges>false</pushChanges>
+					
 					<username>fneska</username>
 					<password>jamiNa73</password>
 
-					<!-- Configuration for perform: -->
-					<!-- <addSchema>true</addSchema> -->
-
+					
 				</configuration>
 			</plugin>
 
