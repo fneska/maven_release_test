@@ -23,8 +23,8 @@
 	</properties>
 
 	<scm>
-		<connection>scm:gitfile://C:/users/fekete.agnes/my_github/maven_release_test1/maven_release_test</connection>
-		<developerConnection>scm:git:file://C:/users/fekete.agnes/my_github/maven_release_test1/maven_release_test</developerConnection>
+		<connection>scm:scm:git:https://github.com/fneska/maven_release_test</connection>
+		<developerConnection>scm:git:https://github.com/fneska/maven_release_test</developerConnection>
 
 		<tag>HEAD</tag>
 	</scm>
@@ -33,7 +33,7 @@
 		<repository>
 			<id>internal.repo</id>
 			<name>Internal repo</name>
-			<url> file://C:/users/fekete.agnes/my_github/maven_release_test1/maven_release_test</url>
+			<url>https://github.com/fneska</url>
 			<layout>default</layout>
 		</repository>
 	</distributionManagement>
